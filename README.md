@@ -4,9 +4,7 @@
 A comprehensive Vehicle Rental System database designed to manage users, vehicles, and bookings with efficient SQL queries for common rental operations.
 
 ## 🗺️ Entity Relationship Diagram (ERD)
-[![Vehicle Rental System ERD](https://drawsql.app/teams/sajid-3/diagrams/first/embed)](https://drawsql.app/teams/sajid-3/diagrams/first)
-
-*Click the image above or visit: https://drawsql.app/teams/sajid-3/diagrams/first*
+*visit: https://drawsql.app/teams/sajid-3/diagrams/first*
 
 
 ## 📊 Sample Data

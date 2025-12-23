@@ -56,9 +56,6 @@ INNER JOIN vehicles as v USING (vehicle_id);
 | 3          | Charlie       | Honda Civic   | 2023-12-01  | 2023-12-02  | confirmed  |
 | 4          | Alice         | Toyota Corolla| 2023-12-10  | 2023-12-12  | pending    |
 
-### 📌 Purpose
-
-This query retrieves complete booking information along with the **customer name** and **vehicle name** for each booking.
 
 ### 🧠 Explanation
 
@@ -84,10 +81,6 @@ WHERE NOT EXISTS(
 | 3          | Yamaha R15 | bike | 2023  | GHI-789            | 30.00        | available |
 | 4          | Ford F-150 | truck| 2020  | JKL-012            | 100.00       | maintenance |
 
-### 📌 Purpose
-
-This query finds vehicles that do **not appear** in the bookings table, meaning they have never been booked.
-
 ### 🧠 Explanation
 
 * The outer query selects all vehicles from the `vehicles` table.
@@ -106,10 +99,6 @@ WHERE status = 'available' AND type = 'car';
 | vehicle_id | name           | type | model | registration_number | rental_price | status    |
 |------------|----------------|------|-------|---------------------|--------------|-----------|
 | 1          | Toyota Corolla | car  | 2022  | ABC-123            | 50.00        | available |
-
-### 📌 Purpose
-
-This query retrieves all vehicles that are currently **available** and of type **car**.
 
 ### 🧠 Explanation
 
@@ -136,10 +125,6 @@ HAVING COUNT(b.booking_id) > 2;
 | vehicle_name | total_bookings |
 |--------------|----------------|
 | Honda Civic  | 3              |
-
-### 📌 Purpose
-
-This query counts how many times each vehicle has been booked and displays only those vehicles that have **more than 2 bookings**.
 
 ### 🧠 Explanation
 
